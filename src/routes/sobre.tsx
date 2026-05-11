@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import artistImg from "@/assets/artist.jpg";
+import artistImg from "@/assets/premio-bonaerenses.jpg";
 import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/sobre")({
