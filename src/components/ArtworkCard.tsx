@@ -10,7 +10,8 @@ export function ArtworkCard({ art }: { art: Artwork }) {
           src={art.image}
           alt={`${art.title} — ${art.technique} por Inés Villa`}
           loading="lazy"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+          style={{ filter: "contrast(1.06) saturate(1.08) brightness(1.02)" }}
         />
         <span className="absolute left-3 top-3 rounded-full bg-background/85 px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-foreground backdrop-blur">
           {art.category}

@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import { artworks, Category } from "@/lib/artworks";
 import { ArtworkCard } from "@/components/ArtworkCard";
 
-const CATS: ("Todas" | Category)[] = ["Todas", "Familia", "Animales", "Naturaleza", "Religioso"];
+const CATS: ("Todas" | Category)[] = ["Todas", "Retratos", "Animales", "Naturaleza", "Religioso"];
 
 export const Route = createFileRoute("/galeria")({
   head: () => ({
