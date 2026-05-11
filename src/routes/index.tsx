@@ -20,7 +20,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const featured = artworks.filter((a) => a.featured);
-  const obraDelMes = artworks.find((a) => a.id === "abrazo-eterno")!;
+  const obraDelMes = artworks.find((a) => a.id === "abuela-y-nietos")!;
 
   return (
     <>
@@ -138,9 +138,9 @@ function Index() {
 
           <div className="mt-14 grid gap-6 md:grid-cols-4">
             {[
-              { icon: Heart, name: "Familia", desc: "Retratos íntimos del afecto cotidiano." },
-              { icon: Sparkles, name: "Animales", desc: "Compañeros, caballos y miradas nobles." },
-              { icon: Award, name: "Naturaleza", desc: "Paisajes pampeanos y flores silvestres." },
+              { icon: Heart, name: "Retratos", desc: "Familia, figuras históricas y escenas íntimas." },
+              { icon: Sparkles, name: "Animales", desc: "Caballos y miradas nobles, en óleo y carbonilla." },
+              { icon: Award, name: "Naturaleza", desc: "Paisajes, bosques y flora argentina." },
               { icon: Sparkles, name: "Religioso", desc: "Imágenes devocionales con luz cálida." },
             ].map(({ icon: Icon, name, desc }) => (
               <Link
